@@ -1,5 +1,4 @@
 # RepoTest_jmanueltorress
-<!-- /*This are the display design to proyect "Portafolio"*/ -->
 <h1>Displays in responsive adaptative with my proyect</h1>
 <h3>Mobile Design: </h3><br>
 
