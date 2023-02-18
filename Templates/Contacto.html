@@ -61,14 +61,14 @@
             <h2 class="h2-2">''</h2>
 
             <ul>
-                <a href="/" style="text-decoration:none ;">
+                <a id="linksnav" href="/" style="text-decoration:none ;">
                     <li>
                         <i class="fa fa-home"></i>About
                     </li>
                 </a>
                 <a href="/Templates/Portafolio.html" style="text-decoration:none ;">
                     <li>
-                        <i class="fa fa-wpforms"></i>Proyectos
+                        <i class="fa fa-wpforms"></i>Portafolio
                     </li>
                 </a>
                 <a href="/Templates/Contacto.html" style="text-decoration:none ;">
@@ -85,35 +85,50 @@
                     </li>
                 </a>
 
-
-
             </ul>
         </nav>
         <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
         <script src="http://mariaalejandra.coffeecup.com/index-1.js"></script>
     </div>
-    <h3 class="sub-title-A">HOLA MUNDO! </h3>
-    <h4 class="sub-title-B" >MI NOMBRE ES JUAN MANUEL TORRES SERVIN</h4>
+    <article class="contact-body">
+        <div class="container">
+            <form id="contact" action="" method="post">
+                <h3>Contactame</h3>
+                <h4>Envia mensaje o comentario rellenando este formulario!</h4>
+                <fieldset>
+                    <input placeholder="Tu nombre" type="text" tabindex="1" required autofocus>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Direccion de email" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Numero telefonico" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Tu sitio web: https://..." type="url" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Escribe tu mensaje aquí...." tabindex="5" required></textarea>
+                </fieldset>
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Enviando">Enviar</button>
+                </fieldset>
+            </form>
 
 
-<p style="height:70% ; padding: 2%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, excepturi quis. Voluptatum magni, dolor quos magnam recusandae in, nam, accusamus qui sapiente totam numquam sequi eum laudantium quaerat cum. Itaque.
-Suscipit ad perspiciatis similique minus, ullam minima non doloremque rerum laborum dolor error magni et illum quos tenetur modi sint, labore iusto quam voluptatibus. Doloremque possimus velit eos ab nihil.
-Molestias dolor iste, aperiam illum magni omnis vero enim, ea sit nesciunt saepe eligendi reiciendis itaque dolore aliquid suscipit aliquam, quod ut rem? Molestias facere delectus pariatur, dicta reprehenderit sed.
-Illo sint similique odio, soluta ea ratione alias! Ex tempore reiciendis quasi expedita? Aut aspernatur iure facilis culpa, quam est harum dolores quia animi impedit vitae, possimus rem vero unde?
-Eveniet ipsum, quam non iste natus voluptate, inventore ad error repellat aut repudiandae eos ullam cupiditate! Autem quos consequatur voluptas similique expedita atque, blanditiis saepe aliquid officiis delectus, iure eum!
-Temporibus iusto nihil repellendus facilis sapiente mollitia dignissimos dolorum sequi, nulla, cupiditate accusantium necessitatibus reiciendis qui odio perferendis numquam libero cumque sit quaerat molestias et deserunt? Eius unde quam enim?
-Quisquam dignissimos labore pariatur tenetur numquam autem perspiciatis dolore quod amet obcaecati veniam modi dicta repellat, laudantium aperiam accusamus quis corporis quasi itaque! Quaerat cupiditate quidem fuga sint optio architecto.
-Illum praesentium eligendi vel aliquam qui eos veniam dolore dicta obcaecati explicabo provident recusandae, ex cupiditate quidem omnis nisi dolores sint ratione. Nostrum, ipsa at. Assumenda voluptates dolorum expedita deserunt?</p>
+        </div>
+    </article>
 
     <footer class="ftr">
-<div class="footer-container">
-    <!-- <h3>@jmanuel-ts Developer</h3> -->
-    <p>Site made by Manuel_ Dev</p>
-    <h3>©2023 Copyright</h3>
-</div>
+        <div class="footer-container">
+            <!-- <h3>@jmanuel-ts Developer</h3> -->
+            <p>Site made by Manuel_ Dev</p>
+            <h3>©2023 Copyright</h3>
+        </div>
     </footer>
 
 </body>
+
 
 
 </html>

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
+
+/*Paleta de estilos*/
+:root:root {
+    
+    --PrimaryFtrBg: black;
+    --font-principal: 'Thasadith', sans-serif;
+    ;
+
+}
+.ftr{
+    font-family: var(--font-principal);
+    position: relative;
+    height: 10%;
+    background: var(--PrimaryFtrBg);
+    height: auto;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    color: #fff;
+
+
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.footer-container h3{
+    font-size: 12pt;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+.footer-container p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+    padding: 1px;
+}
+
+@media (max-width:500px) {
+    .footer-container ul{
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      justify-content: center;
+    }
+    }
