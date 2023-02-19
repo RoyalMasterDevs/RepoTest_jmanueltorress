@@ -245,7 +245,7 @@ nav {
   font-size: 10px;
   color: rgb(0, 0, 0);
   width: 90%;
-  max-width: 350px;
+  
   height: 100%;
   background: #ffffff;
   position: fixed;
@@ -372,7 +372,7 @@ nav li i{
         align-items: center;
         align-content: center;
         padding: 0;
-        height: 60px;
+        height: 50px;
         border-radius: 50% ;
 
     }
@@ -381,9 +381,9 @@ nav li i{
         justify-content: center;
         align-items: center;
         align-content: center;
-        padding: 35px;
-        height: 100px;
-        border-radius: 50%;
+        padding-top: 20px;
+        height: 120px;
+        
     }
 
     #imglnkdin {
@@ -391,20 +391,21 @@ nav li i{
         justify-content: center;
         
         align-content: space-between;
-        padding: 20px 2px 2px 15px;
+        padding: 10px 2px 2px 10px;
         border-radius: 5px;
-        width: 2em;
-        height: 2em;
+        width: 3em;
+        height: 3em;
     }
     #imggit {
         display: grid;
         justify-content: center;
         align-items: center;
         align-content: center;
-        padding: 7px 2px 2px 15px;
+        padding: 10px 2px 2px 10px;
+        width: 3em;
+        height: 3em;
         border-radius: 5px;
-        width: 2em;
-        height: 2em;
+       
     }
 
     #link-ldn {

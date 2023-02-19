@@ -44,12 +44,3 @@
     color: #cacdd2;
     padding: 1px;
 }
-
-@media (max-width:500px) {
-    .footer-container ul{
-      display: flex;
-      margin-top: 10px;
-      margin-bottom: 20px;
-      justify-content: center;
-    }
-    }
