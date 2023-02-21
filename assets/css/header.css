@@ -1,6 +1,7 @@
 /* GoogleFonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css');
 
 /* paleta de colores: root */
 :root {
@@ -181,7 +182,6 @@ white-space: nowrap;
 }
 
   /* menu hamburgesa */
-  @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 .menu {
   transition: 0.1s -webkit-transform linear;
