@@ -25,18 +25,22 @@
 
 .wrapper {
   padding-top: 25px;
-  padding-left:60px;
+  padding-left:50px;
   padding-bottom: 10px;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
 }
 
+
 .wrapper img {
     width:242px;
 }
 /* contacto.html /styles */
-* {
+/* * {
 	margin:0;
 	padding:0;
 	box-sizing:border-box;
@@ -47,7 +51,7 @@
 	-o-font-smoothing:antialiased;
 	
 	text-rendering:optimizeLegibility;
-}
+} */
 
 .contact-body {
 	font-family:var(--font-principal);
@@ -60,10 +64,12 @@
 }
 
 .container {
+	display: flex;
 	max-width:400px;
 	width:100%;
 	margin:0 auto;
 	position:relative;
+	
 }
 
 #contact input[type="text"], #contact input[type="email"], #contact input[type="tel"], #contact input[type="url"], #contact textarea, #contact button[type="submit"] { font:400 12px/16px "Open Sans", Helvetica, Arial, sans-serif; }
@@ -141,18 +147,7 @@ fieldset {
 	outline:0;
 	border:1px solid #999;
 }
-::-webkit-input-placeholder {
- color:#888;
-}
-:-moz-placeholder {
- color:#888;
-}
-::-moz-placeholder {
- color:#888;
-}
-:-ms-input-placeholder {
- color:#888;
-}
+
 
 /*estilos genericos*/
 .sub-title-A{
@@ -162,5 +157,22 @@ display: grid;
 align-content: center;
 justify-content:space-around;
 
+
+}
+
+/* media queries */
+@media screen and (max-width:600px)  {
+	.wrapper {
+  padding-top: 10px;
+  padding-left:60px;
+  padding-bottom: 5px;
+    display: grid;
+	grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+	align-items: center;
+	justify-content: center;
+
+   
+}
 
 }
