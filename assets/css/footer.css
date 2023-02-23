@@ -12,7 +12,8 @@
 .ftr{
     font-family: var(--font-principal);
     position: relative;
-    height: 10%;
+    
+    height: 100%;
     background: var(--PrimaryFtrBg);
     height: auto;
     width: 100%;

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="/assets/css/main.css"> <!-- container main-body -->
     <link rel="stylesheet" href="/assets/css/header.css"> <!-- header-body -->
     <link rel="stylesheet" href="/assets/css/footer.css"> <!-- footer-body -->
-    <link rel="stylesheet" href="assets/css/burger-menu.css" />
+
 </head>
 
 <body>
@@ -53,8 +53,33 @@
 
     </section>
 
-    <!-- aqui va el menu hamburgesa -->
-    <article class="contact-body">
+    <!-- aqui va el menu -->
+    
+    <nav>
+        <div>
+            <input type="checkbox" id="check">
+            <label for="check" class="bar-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="2.5" stroke="#000000" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <line x1="4" y1="6" x2="20" y2="6" />
+                    <line x1="4" y1="12" x2="20" y2="12" />
+                    <line x1="4" y1="18" x2="20" y2="18" />
+                </svg>
+            </label>
+
+            <ul class="nav-menu">
+                <li> <a class="active" href="/index.html">About</a> </li>
+                <li> <a href="/Templates/Portafolio.html">Proyectos</a> </li>
+                <li> <a href="/Templates/Contacto.html">Contacto</a> </li>
+                <li> <a class="cv" href="/Templates/cv_pdf.html">Check CV</a> </li>
+
+            </ul>
+        </div>
+    </nav>
+    <main>
+    <form class="contact-body">
         <div class="container">
             <div id="contact" action="" method="post">
                 <h3>Contactame</h3>
@@ -81,8 +106,8 @@
 
 
         </div>
-    </article>
-
+    </form>
+</main>
     <footer class="ftr">
         <div class="footer-container">
             <!-- <h3>@jmanuel-ts Developer</h3> -->

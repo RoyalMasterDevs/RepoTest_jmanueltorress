@@ -1,7 +1,7 @@
 /* GoogleFonts */
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
-
+ok
 /* paleta de colores: root */
 :root {
     --primary-blue: red;
@@ -181,9 +181,122 @@ white-space: nowrap;
 }
 
   /* menu hamburgesa */
+.nav-menu{
+    font-family:var(--font-principal) ;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    text-align: center;
+    list-style: none;
+    box-sizing: border-box;
+    position: fixed;
+    height:0vh;
+    width: 50%;
+    background-color: rgb(0, 0, 0,.95);
+    transition: all .5s;
+    
 
+}
+
+.nav-menu li{
+    display: none;
+    line-height: 10px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+.nav-menu li a{
+    font-family:var(--font-principal) ;
+   padding: 0;
+   margin: 0px;
+   text-decoration: none;
+   list-style: none;
+   box-sizing: border-box;
+   color: #fff;
+   font-size: 16px;
+   text-transform: uppercase;
+   font-weight: 600;
+}
+.nav-menu li a.active, .nav-menu li a:hover{
+    color: #4a4ae7;
+    transition: .3s;
+}
+#check{
+    display:none;
+}
+#check:checked~.nav-menu{
+    height: 200vh;
+}
+#check:checked~.nav-menu li{
+    display: block;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+}
+.bar-btn{
+    font-size: 15px;
+    color: #fff;
+    margin-right: 10px;
+    cursor: pointer;
+}
 
 /* mediaqueries */
+/*  nav Por encima de 700px */
+@media screen and (min-width: 700px) {
+
+    nav {
+        height: 150px;
+        justify-content: space-around;
+        padding-bottom: 1px;
+
+    }
+    .bar-btn{
+         display: none; /*button-desaparece */
+    }
+    .nav-menu{
+        position: relative;
+        height: 100px;
+        width: 100%;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: center;
+        margin-right: 50px;
+
+    }
+    .nav-menu li{
+        display: inline-block;
+        line-height: 50px;
+        margin: 0 10px;
+        transition: none;
+    }
+    .nav-menu li a{
+        font-size: 18px;
+        color: #000;
+        text-decoration: solid;
+    }
+    .nav-menu li a:hover{
+        font-size: 22px;
+        color: rgb(250, 250, 250);
+        text-decoration: solid;
+        background-color: #000;
+        border-radius: 2px;
+        padding: 3px 3px;
+        transition: .3s;
+    }
+    .nav-menu li a.cv:hover{
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+        text-decoration: solid;
+        background-color: #4a4ae7;
+        border-radius: 2px;
+        padding: 3px 3px;
+        transition: .3s;
+    }
+   }
 /* Por debajo de 600px */
 @media screen and (max-width: 600px) {
 
