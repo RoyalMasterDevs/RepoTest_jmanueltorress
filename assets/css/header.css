@@ -1,23 +1,34 @@
 /* GoogleFonts */
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Thasadith&display=swap');
-ok
-/* paleta de colores: root */
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Anton&family=Bungee+Inline&family=Mingzat&family=Nunito:wght@200&family=Press+Start+2P&display=swap');
+
 :root {
+
+
     --primary-blue: red;
     --txtBlack: black;
-    --font-principal: 'Thasadith', sans-serif;
-    ;
+    --font-Title: 'Bungee Inline', cursive;
+    --font-Descripcion: 'Press Start 2P', cursive;
+
+
 
 }
-body{
+
+body {
     width: 99.2%;
     /* background-color:rgb(255, 255, 255); */
-    background: rgb(255, 255, 255);
-    
-    
+
 }
+main{
+    margin-top: 80px;
+}
+
 header {
+    position: fixed; /* Fija el contenedor en la parte superior de la ventana */
+    top: 0; /* Ajusta la posición vertical del contenedor */
+   
+    background-color: #fff; /* Agrega un fondo blanco al contenedor */
+    z-index: 999; /* Asegura que el contenedor aparezca encima de otros elementos */
+    /* Ajusta los estilos de acuerdo a tus necesidades */
     background-color: white;
     display: flex;
     margin: 2px;
@@ -25,8 +36,9 @@ header {
     width: 100%;
     background-image: radial-gradient(circle at 50% -20.71%, #693c7d 0, #4c256d 25%, #290b5b 50%, #00004a 75%, #00003c 100%);
 }
-.banner{
-    justify-content:space-between;
+
+.banner {
+    justify-content: space-between;
 }
 
 .banner-i {
@@ -35,8 +47,8 @@ header {
     border-radius: 0px 25px 25px 0px;
 
     width: 70%;
-    height: 200px;
-    font-family: var(--font-principal);
+    height: 100px;
+    font-family: var(--font-Title);
 
     display: flex;
     justify-content: center;
@@ -52,9 +64,29 @@ header {
     font-weight: 100;
     font-stretch: expanded;
     padding: 1%;
+
 }
 
-.banner-d{
+/*Neon tit-p*/
+.banner-i>.tit-p {
+
+
+
+    padding: 10px;
+    border: none;
+
+    color: rgb(233, 110, 2);
+    text-decoration: normal;
+    text-align: center;
+
+    white-space: pre;
+     text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 40px #1130b8 , 0 0 70px #00ffff , 0 0 80px #0084ff , 0 0 100px #3c00ff ; 
+
+}
+
+
+/*fin tit p*/
+.banner-d {
     color: var(--txtBlack);
     width: auto;
 
@@ -64,44 +96,52 @@ header {
 
     display: flex;
     justify-content: space-between;
-    
+
 
 }
 
-.description{
+.description {
     background-color: black;
     color: white;
-    font-family: var(--font-principal);
+    font-family: var(--font-Descripcion);
     display: flex;
     text-align: center;
     justify-content: center;
     width: 100%;
+    position: fixed; /* Fija el contenedor en la parte superior de la ventana */
+    top: 105px; /* Ajusta la posición vertical del contenedor */
+    z-index: 500; /* Asegura que el contenedor aparezca encima de otros elementos */
+    /* Ajusta los estilos de acuerdo a tus necesidades */
     
+
 }
 
 
-.h2-1>span{
-/* font-size: 20px;
-padding-right: 10px; */
-white-space: nowrap;
-    border-right: 4px solid ;
-    display: block;
-    width: 25ch ;
 
-    animation: typing 2.2s steps(25), blink  .5s infinite step-end alternate;
+.h2-1>span {
+    /* font-size: 20px;
+padding-right: 10px; */
+    white-space: nowrap;
+    border-right: 4px solid;
+    display: block;
+    width: 25ch;
+
+    animation: typing 2.2s steps(25), blink .5s infinite step-end alternate;
     overflow: hidden;
 }
+
 @keyframes typing {
-    from{
+    from {
         width: 0;
     }
-  
+
 }
+
 @keyframes blink {
-    50%{
+    50% {
         border-color: transparent;
     }
-  
+
 }
 
 
@@ -129,27 +169,34 @@ white-space: nowrap;
 
 
 }
-#link-ldn:hover{
-    
-    text-decoration:underline;
-    /*offset-x | offset-y | blur-radius + color*/ /*--refractor: mover margen en vertical, mover margen en horizontal y opacidad-*/
-    text-shadow: 1px 1px 2px #6134dd;/*resaltado*/
-    
-  }
+
+#link-ldn:hover {
+
+    text-decoration: underline;
+    /*offset-x | offset-y | blur-radius + color*/
+    /*--refractor: mover margen en vertical, mover margen en horizontal y opacidad-*/
+    text-shadow: 1px 1px 2px #6134dd;
+    /*resaltado*/
+
+}
+
 #link-github {
     display: flex;
     position: relative;
     padding: 47px 4px 30px 5px;
-    color: rgb(7, 103, 198);
+    color: rgb(98, 162, 225);
     text-decoration: none;
     margin: auto;
 
 }
-#link-github:hover{
-    text-decoration:underline;
-    /*offset-x | offset-y | blur-radius + color*/ /*--refractor: mover margen en vertical, mover margen en horizontal y opacidad-*/
-    text-shadow: 1px 1px 2px #6134dd;/*resaltado*/
-  }
+
+#link-github:hover {
+    text-decoration: underline;
+    /*offset-x | offset-y | blur-radius + color*/
+    /*--refractor: mover margen en vertical, mover margen en horizontal y opacidad-*/
+    text-shadow: 1px 1px 2px #6134dd;
+    /*resaltado*/
+}
 
 
 
@@ -163,6 +210,16 @@ white-space: nowrap;
 
 }
 
+#imgperfil2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 2% 45%;
+    height: 170px;
+    border-radius: 50%;
+}
+
 #imglnkdin {
     display: flex;
     justify-content: center;
@@ -171,6 +228,7 @@ white-space: nowrap;
     padding: 40px 4px 30px 30px;
     border-radius: 5px;
 }
+
 #imggit {
     display: flex;
     justify-content: center;
@@ -180,63 +238,90 @@ white-space: nowrap;
     border-radius: 5px;
 }
 
-  /* menu hamburgesa */
-.nav-menu{
-    font-family:var(--font-principal) ;
+/* menu hamburgesa */
+.menu-head{
+    width: 100%;
+    position: fixed; /* Fija el contenedor en la parte superior de la ventana */
+    top: 170px; /* Ajusta la posición vertical del contenedor */
+    z-index: 500; /* Asegura que el contenedor aparezca encima de otros elementos */
+    /* Ajusta los estilos de acuerdo a tus necesidades */
+    background-color: rgb(233, 110, 2);
+    padding-bottom: 0;
+    height: 70px;
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 5px;
+    
+}
+.nav-menu {
+    font-family: var(--font-principal);
     padding: 0;
     margin: 0;
     text-decoration: none;
     text-align: center;
     list-style: none;
     box-sizing: border-box;
-    position: fixed;
-    height:0vh;
+    position: relative;/* Fija el contenedor en la parte superior de la ventana */
+    height: 0vh;
     width: 50%;
-    background-color: rgb(0, 0, 0,.95);
+    background-color: rgb(0, 0, 0, .95);
     transition: all .5s;
     
+    
+
 
 }
 
-.nav-menu li{
+.nav-menu li {
     display: none;
     line-height: 10px;
-    margin: 50px 0;
+    margin: 40px 0;
     transition: all .5s;
+    padding-top: 20px;
+    
 }
-.nav-menu li a{
-    font-family:var(--font-principal) ;
-   padding: 0;
-   margin: 0px;
-   text-decoration: none;
-   list-style: none;
-   box-sizing: border-box;
-   color: #fff;
-   font-size: 16px;
-   text-transform: uppercase;
-   font-weight: 600;
+
+.nav-menu li a {
+    font-family: var(--font-principal);
+    padding: 0;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    
 }
-.nav-menu li a.active, .nav-menu li a:hover{
-    color: #4a4ae7;
+
+.nav-menu li a.active,
+.nav-menu li a:hover {
+    color: #f4f4f4;
     transition: .3s;
 }
-#check{
-    display:none;
+
+#check {
+    display: none;
 }
-#check:checked~.nav-menu{
+
+#check:checked~.nav-menu {
     height: 200vh;
 }
-#check:checked~.nav-menu li{
+
+#check:checked~.nav-menu li {
     display: block;
 }
-nav{
+
+nav {
     height: 100px;
     width: 100%;
     display: flex;
-    justify-content: space-between; 
+    justify-content: space-between;
     align-items: center;
 }
-.bar-btn{
+
+.bar-btn {
     font-size: 15px;
     color: #fff;
     margin-right: 10px;
@@ -253,10 +338,13 @@ nav{
         padding-bottom: 1px;
 
     }
-    .bar-btn{
-         display: none; /*button-desaparece */
+
+    .bar-btn {
+        display: none;
+        /*button-desaparece */
     }
-    .nav-menu{
+
+    .nav-menu {
         position: relative;
         height: 100px;
         width: 100%;
@@ -267,18 +355,21 @@ nav{
         margin-right: 50px;
 
     }
-    .nav-menu li{
+
+    .nav-menu li {
         display: inline-block;
         line-height: 50px;
         margin: 0 10px;
         transition: none;
     }
-    .nav-menu li a{
+
+    .nav-menu li a {
         font-size: 18px;
         color: #000;
         text-decoration: solid;
     }
-    .nav-menu li a:hover{
+
+    .nav-menu li a:hover {
         font-size: 22px;
         color: rgb(250, 250, 250);
         text-decoration: solid;
@@ -287,55 +378,61 @@ nav{
         padding: 3px 3px;
         transition: .3s;
     }
-    .nav-menu li a.cv:hover{
+
+    .nav-menu li a.cv:hover {
         font-size: 22px;
-        color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
         text-decoration: solid;
-        background-color: #4a4ae7;
+        background-color: #ffffff;
         border-radius: 2px;
         padding: 3px 3px;
         transition: .3s;
     }
-   }
+}
+
 /* Por debajo de 600px */
 @media screen and (max-width: 600px) {
-
-    #imgperfil {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        padding: 40% 2%;
-        height: 80px;
-        border-radius: 50%;
-
+    
+    .menu-head{
+        width: 100%;
+        position: fixed; /* Fija el contenedor en la parte superior de la ventana */
+        top: 172px; /* Ajusta la posición vertical del contenedor */
+        z-index: 500; /* Asegura que el contenedor aparezca encima de otros elementos */
+        /* Ajusta los estilos de acuerdo a tus necesidades */
+        background-color: #e49400dc;
+        padding-bottom: 0;
+        height: 70px;
+        display: inline;
+        margin-bottom: 0;
     }
+
     .banner-i {
         background-color: black;
         color: white;
         border-radius: 0px 30px 25px 0px;
-    
-        width:80%;
+
+        width: 80%;
         height: 150px;
-        font-family: var(--font-principal);
-    
+        font-family: var(--font-Title);
+
         display: flex;
-        justify-content:space-between;
-    
+        justify-content: space-between;
+
     }
-    .banner-d{
+
+    .banner-d {
         color: var(--txtBlack);
         width: auto;
-        position:relative;
-        padding-top:10px;
+        position: relative;
+        padding-top: 10px;
         height: 10%;
         font-family: var(--font-principal);
         font-size: small;
         display: grid;
-        align-content:unset;
+        align-content: unset;
         justify-content: space-around;
-        
-    
+
+
     }
 
     .banner-i>.tit-p {
@@ -343,52 +440,57 @@ nav{
         align-content: center;
         justify-content: left;
         align-items: center;
-        font-size: 12pt;
+        font-size: 14pt;
         font-weight: 100;
         font-stretch: expanded;
-        padding: 20px;
+        padding: 10px;
     }
-    .description{
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
-    font-family: var(--font-principal);
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    width: 100%;
-    font-size: 8pt;
+
+    .description {
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        font-family: var(--font-Descripcion);
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+        top:137px;
+        font-size: 6pt;
     }
-    
-    #imgperfil {
+
+    #imgperfil,
+    #imgperfil2 {
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
         padding: 10% 5%;
         height: 100px;
-        border-radius: 50% ;
+        border-radius: 50%;
 
     }
-    #img-banner1{
+
+    #img-banner1 {
         display: flex;
         justify-content: center;
         align-items: center;
         align-content: center;
         padding: 0px;
         height: 0px;
-        
+
     }
 
     #imglnkdin {
         display: grid;
         justify-content: center;
-        
+
         align-content: space-between;
         padding: 10px 2px 2px 10px;
         border-radius: 5px;
         width: 1.5em;
         height: 1.5em;
     }
+
     #imggit {
         display: grid;
         justify-content: center;
@@ -398,21 +500,21 @@ nav{
         width: 1.5em;
         height: 1.5em;
         border-radius: 5px;
-       
+
     }
 
     #link-ldn {
         display: flex;
         position: relative;
         padding: 2px 2px 15px 2px;
-        color:#fff;
+        color: #fff;
         text-rendering: geometricPrecision;
         margin: auto;
-    
-    
-    
+
+
+
     }
-    
+
     #link-github {
         display: flex;
         position: relative;
@@ -420,6 +522,6 @@ nav{
         color: rgb(7, 103, 198);
         text-decoration: none;
         margin: auto;
-    
+
     }
 }

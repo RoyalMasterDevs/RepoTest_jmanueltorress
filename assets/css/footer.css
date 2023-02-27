@@ -19,7 +19,7 @@
     width: 100%;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-top: 20px;
+    margin-top: 700px;
     color: #fff;
 
 
@@ -44,4 +44,9 @@
     font-size: 14px;
     color: #cacdd2;
     padding: 1px;
+}
+@media screen and (max-width:600px) {
+    .ftr{
+        margin-top: 650px;
+    }
 }

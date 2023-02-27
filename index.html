@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio_dev</title>
     <!-- links -->
-    <link rel="stylesheet" href="assets/css/Normalize.css">
-    <link rel="stylesheet" href="assets/css/main.css"> <!-- container main-body -->
-    <link rel="stylesheet" href="assets/css/header.css"> <!-- header-body -->
-    <link rel="stylesheet" href="assets/css/footer.css"> <!-- footer-body -->
+    <link rel="stylesheet" href="./assets/css/Normalize.css">
+    <link rel="stylesheet" href="./assets/css/main.css"> <!-- container main-body -->
+    <link rel="stylesheet" href="./assets/css/header.css"> <!-- header-body -->
+    <link rel="stylesheet" href="./assets/css/footer.css"> <!-- footer-body -->
     
 </head>
 
@@ -20,9 +20,9 @@
         <section class="banner-i">
             <h1 class="tit-p">DEV_ MANUEL</h1>
 
-            <img id="img-banner1" src="assets/images/bannerdev.jpg" alt="dev-banner" height="200px">
-
-            <img id="imgperfil" src="assets/images/1254profl.jpeg" alt="dev-banner" height="185px">
+            <!-- <img id="img-banner1" src="./assets/images/bannerdev.jpg" alt="dev-banner1" height="200px"> -->
+            <img id="imgperfil" src="./assets/images/avatar.png" alt="dev-imagen-perfil" height="95px">
+            <!-- <img id="imgperfil" src="./assets/images/1254profl.jpeg" alt="dev-imagen-perfil" height="185px"> -->
 
 
 
@@ -30,10 +30,10 @@
         </section>
         <aside class="banner">
             <div class="banner-d">
-                <img id="imglnkdin" src="assets/images/linkedinicon.png" alt="img-Linkedinlogo" width="36em" height="36em">
+                <img id="imglnkdin" src="./assets/images/linkedinicon.png" alt="img-Linkedinlogo" width="36em" height="36em">
                 <a id="link-ldn" target="_blank" href="https://www.linkedin.com/in/juanmanuel-ts">Linkedin</a>
 
-                <img id="imggit" src="/assets/images/githublogow.png" alt="img-githublogo" width="36em" height="36em">
+                <img id="imggit" src="./assets/images/githublogow.png" alt="img-github" width="36em" height="36em">
                 <a id="link-github" target="_blank" href="https://github.com/jmanueltorress/">Mi Repo</a>
 
 
@@ -42,9 +42,7 @@
 
 
         </aside>
-
-    </header>
-    <section class="description">
+         <section class="description">
         <h2 class="h2-1">
             <span>DESARROLLADOR DE SOFTWARE </span>
         </h2>
@@ -52,9 +50,12 @@
 
     </section>
 
+    </header>
+   
+    
    
 <!-- aqui va el menu -->
-<nav>
+<nav class="menu-head">
     <div>
        <input type="checkbox" id="check">
        <label for="check" class="bar-btn">
@@ -67,34 +68,276 @@
        </label>
        
       <ul class="nav-menu">
-        <li> <a class="active" href="">About</a> </li>
-        <li> <a href="/Templates/Portafolio.html">Proyectos</a> </li>
-        <li> <a href="/Templates/Contacto.html">Contacto</a> </li>
-        <li> <a class="cv" href="/Templates/cv_pdf.html">Check CV</a> </li>
+        <li> <a class="active" href="#a">About</a> </li>
+        <li> <a href="#b">Proyectos</a> </li>
+        <li> <a href="#c">Contacto</a> </li>
+        <li> <a class="cv" href="#d">Check CV</a> </li>
        
       </ul>
     </div>
 </nav>
+<main class="container"></main>
+<!-- main-index      -->
+<div id="a"></div>
+ <div id="prim-main">       
+    <h3 class="sub-title-A">HOLA! </h3>
+    
+    <h4 class="sub-title-B" >MI NOMBRE ES JUAN MANUEL TORRES</h4>
+    
+<div id="contain-p">
+    <p class="p-about-1">
+        <img id="imgperfil2" src="./assets/images/1254profl.jpeg" alt="dev-imagen-perfil" height="170px">
+    Profesionista egresado de la carrera de
+    Licenciatura en Ingenieria en Tecnologias de información, soy una persona
+    sumamente interesada por aprender y entender las tecnologias que contribuyen a lograr soluciones que optimizan y agilizan tareas de la cotidianeidad.
+    </p>
+    <p class="p-about-1">
+     En las diversas ramas que existen en el entorno de TI, mi principal enfoque es el desarrollo de software Desktop, Mobil & Web.
+    </p> 
+    <p class="p-about-2">
+    Actualmente el rubro en el que mas me agrada desempeñarme es en el desarrollo web 
+    por lo que me encuentro profundizando diversos temas que van desde el frontend, backend 
+    y devops. En este sitio encontras una coleccion de lo que e realizado e implementado, algunos proyectos personales 
+    y reales, ademas proximamente complementare este espacio agregando un apartado con algunos cursos que elaborare y compartire.
+</p>
+</div>
+<section class="skills">
+<h2 class="sub-title-B" style="border-bottom: 1.5px solid rgb(100, 98, 98);">
+    Soft Skills
+</h2>
+<div class="table-skills">
+    
+<img class="img-tb" src="./assets/images/node-js.webp" alt="Node" >
+<img class="img-tb" src="./assets/images/React.webp" alt="React" > 
+<img class="img-tb" src="./assets/images/js.png" alt="JavaScr" >
+<img class="img-tb" src="./assets/images/java.png" alt="Java" >   
+<img class="img-tb" src="./assets/images/c++.png" alt="C++" >
+<img class="img-tb" src="./assets/images/MYSQL.png" alt="Mysql" >  
+<img class="img-tb" src="./assets/images/linux-256.webp" alt="Linux" > 
+<img class="img-tb" src="./assets/images/micsfWin.webp" alt="Windows" >  
+<img class="img-tb" src="./assets/images/githubb.png" alt="GitHub" > 
+<img class="img-tb" src="./assets/images/html.png" alt="Html" >  
+<img class="img-tb" src="./assets/images/css.png" alt="css" > 
+<img class="img-tb" src="./assets/images/sass.png" alt="sass" > 
+<img class="img-tb" src="./assets/images/tailw.png" alt="tailwind" >
+<img class="img-tb" src="./assets/images/bosstr.png" alt="boostrap" > 
+<img class="img-tb" src="./assets/images/bash.png" alt="bash" > 
+
+</div>
+</section>
+</div>
+<!-- main-portafolio -->
+<div id="b"></div>
+<div id="sec-main">
+    <h2 class="h2-subtA2">HECHA UN VISTAZO A MIS PROYECTOS! </h2>
+
+    <!-- card1 -->
+    <section class="card">
+
+        <figure class="front">
+            <img src="https://img.freepik.com/vector-gratis/companeros-piso-comenzando-proyecto-empresarial_23-2148857003.jpg"
+                alt="proyecto-1-img">
+
+            <div class="back">
+                <p class="description-project">
+                    TEXTENCRIPT
+                    <br><br>
+                    Interfaz para añadir un mensaje y encriptar el texto.
+                    
+                </p>
+                
+                
+
+             
+            </div>
             
- <main>       
-    <h3 class="sub-title-A">HOLA MUNDO! </h3>
-    <h4 class="sub-title-B" >MI NOMBRE ES JUAN MANUEL TORRES SERVIN</h4>
+        </figure>
+        
 
 
-<p style="height:70% ; padding: 2%;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, excepturi quis. Voluptatum magni, dolor quos magnam recusandae in, nam, accusamus qui sapiente totam numquam sequi eum laudantium quaerat cum. Itaque.
-Suscipit ad perspiciatis similique minus, ullam minima non doloremque rerum laborum dolor error magni et illum quos tenetur modi sint, labore iusto quam voluptatibus. Doloremque possimus velit eos ab nihil.
-Molestias dolor iste, aperiam illum magni omnis vero enim, ea sit nesciunt saepe eligendi reiciendis itaque dolore aliquid suscipit aliquam, quod ut rem? Molestias facere delectus pariatur, dicta reprehenderit sed.
-Illo sint similique odio, soluta ea ratione alias! Ex tempore reiciendis quasi expedita? Aut aspernatur iure facilis culpa, quam est harum dolores quia animi impedit vitae, possimus rem vero unde?
-Eveniet ipsum, quam non iste natus voluptate, inventore ad error repellat aut repudiandae eos ullam cupiditate! Autem quos consequatur voluptas similique expedita atque, blanditiis saepe aliquid officiis delectus, iure eum!
-Temporibus iusto nihil repellendus facilis sapiente mollitia dignissimos dolorum sequi, nulla, cupiditate accusantium necessitatibus reiciendis qui odio perferendis numquam libero cumque sit quaerat molestias et deserunt? Eius unde quam enim?
-Quisquam dignissimos labore pariatur tenetur numquam autem perspiciatis dolore quod amet obcaecati veniam modi dicta repellat, laudantium aperiam accusamus quis corporis quasi itaque! Quaerat cupiditate quidem fuga sint optio architecto.
-Illum praesentium eligendi vel aliquam qui eos veniam dolore dicta obcaecati explicabo provident recusandae, ex cupiditate quidem omnis nisi dolores sint ratione. Nostrum, ipsa at. Assumenda voluptates dolorum expedita deserunt?</p>
-</main>
+    <!-- card2 -->
+        <figure class="front">
+            <img src="https://img.freepik.com/vector-gratis/companeros-piso-comenzando-proyecto-empresarial_23-2148857003.jpg"
+                alt="proyecto-2-img">
+            <figure class="back">
+                <p class="description-project">
+                    Descripcion
+                </p>
+            </figure>
+        </figure>
+
+
+         <!-- card3 -->
+        <figure class="front">
+            <img src="https://img.freepik.com/vector-gratis/companeros-piso-comenzando-proyecto-empresarial_23-2148857003.jpg"
+                alt="proyecto-3-img">
+            <figure class="back">
+                <p class="description-project">
+                    Descripcion
+                </p>
+            </figure>
+        </figure>
+
+
+         <!-- card4 -->
+        <figure class="front">
+            <img src="https://img.freepik.com/vector-gratis/companeros-piso-comenzando-proyecto-empresarial_23-2148857003.jpg"
+                alt="proyecto-4-img">
+            <figure class="back">
+                <p class="description-project">
+                    Descripcion
+                </p>
+            </figure>
+        </figure>
+
+
+
+        <!-- <div class="lista">row-2</div> -->
+         <!-- card5 -->
+        <figure class="front">
+            <img src="https://img.freepik.com/vector-gratis/companeros-piso-comenzando-proyecto-empresarial_23-2148857003.jpg"
+                alt="proyecto-5-img">
+            <figure class="back">
+                <p class="description-project">
+                    Descripcion
+                </p>
+            </figure>
+        </figure>
+
+
+
+        <figure class="front">
+            <img src="https://img.freepik.com/vector-gratis/companeros-piso-comenzando-proyecto-empresarial_23-2148857003.jpg"
+                alt="proyecto-6-img">
+                <figure class="back">
+                    <p class="description-project">
+                        Descripcion
+                    </p>
+                </figure>
+        </figure>
+        
+
+
+        <figure class="front">
+            <img src="https://img.freepik.com/vector-gratis/companeros-piso-comenzando-proyecto-empresarial_23-2148857003.jpg"
+                alt="proyecto-7-img">
+                <figure class="back">
+                    <p class="description-project">
+                        Descripcion
+                    </p>
+                </figure>
+        </figure>
+        
+
+
+        <figure class="front">
+            <img src="https://img.freepik.com/vector-gratis/companeros-piso-comenzando-proyecto-empresarial_23-2148857003.jpg"
+                alt="proyecto-8-img">
+                <figure class="back">
+                    <p class="description-project">
+                        Descripcion
+                    </p>
+                </figure>
+        </figure>
+        
+
+
+
+
+    </section>
+
+</div>
+<!-- main-contactame -->
+<div id="c"></div>
+<div id="contact">
+    <div class="contact_form">
+
+      <div class="formulario">
+        <h2 class="form-h2">CONTACTAME</h2>
+        <h3>Escríbeme y me pondre en contacto contigo</h3>
+
+
+        <form action="submeter-formulario.php" method="post">
+
+
+          <p>
+            <label for="nombre" class="colocar_nombre">Nombre
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+              placeholder="Escribe tu nombre">
+          </p>
+
+          <p>
+            <label for="email" class="colocar_email">Email
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="email" name="introducir_email" id="email" required="obligatorio"
+              placeholder="Escribe tu Email">
+          </p>
+
+          <p>
+            <label for="website" class="colocar_website">Sitio web
+            </label>
+            <input type="url" name="introducir_website" id="website" placeholder="Escribe la URL de tu web">
+          </p>
+
+          <p>
+            <label for="asunto" class="colocar_asunto">Asunto
+              <span class="obligatorio">*</span>
+            </label>
+            <input type="text" name="introducir_asunto" id="assunto" required="obligatorio"
+              placeholder="Escribe un asunto">
+          </p>
+
+          <p>
+            <label for="mensaje" class="colocar_mensaje">Mensaje
+              <span class="obligatorio">*</span>
+            </label>
+            <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+              placeholder="Deja aquí tu comentario..."></textarea>
+          </p>
+
+          <button type="submit" name="enviar_formulario" id="enviar">
+            <p>Enviar</p>
+          </button>
+
+          <p class="aviso">
+            <span class="obligatorio"> * </span>los campos son obligatorios.
+          </p>
+
+        </form>
+      </div>
+    </div>
+  </div>
+  </main>
+
+  <!-- cv-pdf -->
+  <div id="d"></div>
+  <div id="tre-main">
+        <div class="cv-main">
+            <div id="img-cv">
+                <!-- <img src="./assets/docs/cv_JMTS.png" alt="" width="70%" height="auto"> -->
+                <img src="./assets/images/cvVect.jpg" alt="" width="70%" height="auto">
+
+            </div>
+            <center>
+
+                <button class="btn-downl-cv">
+                    <a role="button" href="./assets/docs/cv _jmts.pdf" download="cv_jmts.pdf">Descargar PDF</a>
+                </button>
+
+
+            </center>
+
+
+        </div>
+</div>
     <footer class="ftr">
 <div class="footer-container">
     <!-- <h3>@jmanuel-ts Developer</h3> -->
     <p>Site made by Manuel_ Dev</p>
-    <h3>©2023 Copyright</h3>
+    <h3 style="color:white;">©2023 Copyright</h3>
 </div>
     </footer>
 
